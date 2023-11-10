@@ -85,5 +85,9 @@ class Program
 
         board[row, col] = symbol;
     }
+      static void SwitchPlayer()
+    {
+        currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';
+    }
 
 }
