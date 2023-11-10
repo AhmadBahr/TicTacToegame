@@ -89,5 +89,28 @@ class Program
     {
         currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';
     }
+    static bool CheckForWin()
+    {
+        for (int i = 0; i < 3; i++) //check rows
+        {
+            if (board[i, 0] == currentPlayer && board[i, 1] == currentPlayer && board[i, 2] == currentPlayer)
+                return true;
+
+            if ((board[0, 0] == currentPlayer && board[1, 1] == currentPlayer && board[2, 2] == currentPlayer) ||
+            (board[0, 2] == currentPlayer && board[1, 1] == currentPlayer && board[2, 0] == currentPlayer))   // Checkcolumns
+
+            {
+                return true;
+            }
+            return false;
+        }
+
+
+
+
+
+        } 
+
+    }
 
 }
