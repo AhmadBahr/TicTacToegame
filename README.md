@@ -10,7 +10,7 @@ A TicTacToe simulation game created using C#. The goal is to showcase a game pla
 
 ## Technologies Used
 - Csharp
-- 
+  
 
 ## Setup
 Using the debugger you can see this project. Traditionally the first player plays with "X". So you can decide who wants to go "X" and who wants go with "O". 
