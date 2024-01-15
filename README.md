@@ -21,6 +21,9 @@ The player that succeeds in placing three respective mark (X or O) in a horizont
 
 ## Code & Snippets
 
+![Capture](https://github.com/AhmadBahr/TicTacToegame/assets/150359856/5dfcd9e0-53fc-43bb-8bbe-0471bfa24f37)
+![Capture2](https://github.com/AhmadBahr/TicTacToegame/assets/150359856/9de86919-ef14-4b5a-ab90-7519d669f3ae)
+
 ![1](https://github.com/AhmadBahr/TicTacToegame/assets/150359856/1b905a46-7575-45f5-aaa8-c783de588ee4)
 ![2](https://github.com/AhmadBahr/TicTacToegame/assets/150359856/84b01175-3bd3-4b77-a325-9310597b0c83)
 ![4](https://github.com/AhmadBahr/TicTacToegame/assets/150359856/ac0acb1d-18d4-4ba2-9eed-40c6695010d4)
