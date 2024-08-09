@@ -17,25 +17,25 @@ The goal of the game is to align three of your marks (either X or O) horizontall
 - Csharp
   
 ## Setup
-Objective: The primary goal of Tic-Tac-Toe is to align three of your marks (either X or O) in a horizontal, vertical, or diagonal row on the 3x3 game board. The player who achieves this first wins the game.
+1. Objective: The primary goal of Tic-Tac-Toe is to align three of your marks (either X or O) in a horizontal, vertical, or diagonal row on the 3x3 game board. The player who achieves this first wins the game.
 
-Game Board: The game board consists of a 3x3 grid of cells. Each cell can be empty or occupied by a mark (X or O).
+2. Game Board: The game board consists of a 3x3 grid of cells. Each cell can be empty or occupied by a mark (X or O).
 
 ## Gameplay:
-Turn Order: Players take turns placing their mark in an empty cell. The first player is designated as "X," and the second player is designated as "O."
+1. Turn Order: Players take turns placing their mark in an empty cell. The first player is designated as "X," and the second player is designated as "O."
 
-Mark Placement: A player must select an empty cell to place their mark. If a cell is already occupied, it cannot be overwritten.
+2. Mark Placement: A player must select an empty cell to place their mark. If a cell is already occupied, it cannot be overwritten.
 
-Winning Condition: The game ends when one player aligns three of their marks in a row, column, or diagonal.
+3. Winning Condition: The game ends when one player aligns three of their marks in a row, column, or diagonal.
 
-Draw Condition: If all cells are filled and no player has aligned three marks, the game ends in a draw.
+ 4. Draw Condition: If all cells are filled and no player has aligned three marks, the game ends in a draw.
 
-Invalid Moves: Moves made to occupied cells or outside the range of the board are considered invalid. Players must choose a valid, empty cell.
+5. Invalid Moves: Moves made to occupied cells or outside the range of the board are considered invalid. Players must choose a valid, empty cell.
 
 ## Modes
-Player vs. Player
+1. Player vs. Player
 
-Description: In this mode, two players take turns on the same computer. Player 1 uses "X" and Player 2 uses "O."
+2. Description: In this mode, two players take turns on the same computer. Player 1 uses "X" and Player 2 uses "O."
 
 Gameplay:
 
