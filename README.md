@@ -9,8 +9,8 @@
 ## General Info
 A Tic-Tac-Toe simulation game created using C# with a graphical user interface (GUI). The game supports two different modes:
 
-. Player vs. Player: Two players take turns making moves on the same computer.
-Player vs. AI: One player competes against an AI opponent, with the AI making random moves.
+- Player vs. Player: Two players take turns making moves on the same computer.
+- Player vs. AI: One player competes against an AI opponent, with the AI making random moves.
 The goal of the game is to align three of your marks (either X or O) horizontally, vertically, or diagonally to win. If all squares are filled and no player has won, the game ends in a tie.
 
 ## Technologies Used
