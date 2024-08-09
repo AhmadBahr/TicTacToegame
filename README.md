@@ -9,7 +9,7 @@
 ## General Info
 A Tic-Tac-Toe simulation game created using C# with a graphical user interface (GUI). The game supports two different modes:
 
-Player vs. Player: Two players take turns making moves on the same computer.
+. Player vs. Player: Two players take turns making moves on the same computer.
 Player vs. AI: One player competes against an AI opponent, with the AI making random moves.
 The goal of the game is to align three of your marks (either X or O) horizontally, vertically, or diagonally to win. If all squares are filled and no player has won, the game ends in a tie.
 
@@ -17,12 +17,12 @@ The goal of the game is to align three of your marks (either X or O) horizontall
 - Csharp
   
 ## Setup
-1. Objective: The primary goal of Tic-Tac-Toe is to align three of your marks (either X or O) in a horizontal, vertical, or diagonal row on the 3x3 game board. The player who achieves this first wins the game.
+Objective: The primary goal of Tic-Tac-Toe is to align three of your marks (either X or O) in a horizontal, vertical, or diagonal row on the 3x3 game board. The player who achieves this first wins the game.
 
-2. Game Board: The game board consists of a 3x3 grid of cells. Each cell can be empty or occupied by a mark (X or O).
+Game Board: The game board consists of a 3x3 grid of cells. Each cell can be empty or occupied by a mark (X or O).
 
 ## Gameplay:
-1. Turn Order: Players take turns placing their mark in an empty cell. The first player is designated as "X," and the second player is designated as "O."
+. Turn Order: Players take turns placing their mark in an empty cell. The first player is designated as "X," and the second player is designated as "O."
 
 2. Mark Placement: A player must select an empty cell to place their mark. If a cell is already occupied, it cannot be overwritten.
 
