@@ -9,14 +9,34 @@ class Program
     };
 
     static char currentPlayer = 'X';
+    static bool isAIEnabled = false; // Player vs AI mode
 
     static void Main()
     {
+        Console.WriteLine("Welcome to Tic-Tac-Toe!");
+        Console.WriteLine("Select mode: ");
+        Console.WriteLine("1. Player vs Player");
+        Console.WriteLine("2. Player vs AI");
+        Console.Write("Enter choice (1 or 2): ");
+        int choice = int.Parse(Console.ReadLine());
+
+        if (choice == 2)
+        {
+            isAIEnabled = true;
+        }
+
         do
         {
             Console.Clear();
             DisplayBoard();
-            GetPlayerMove();
+            if (currentPlayer == 'X' || !isAIEnabled)
+            {
+                GetPlayerMove();
+            }
+            else
+            {
+                GetAIMove();
+            }
         } while (!CheckForWin() && !CheckForTie());
 
         Console.Clear();
@@ -51,26 +71,38 @@ class Program
     static void GetPlayerMove()
     {
         Console.WriteLine($"\nPlayer {currentPlayer}, enter your move (1-9):");
-        int move = int.Parse(Console.ReadLine());
+        int move;
 
-        if (IsValidMove(move))
+        while (!int.TryParse(Console.ReadLine(), out move) || !IsValidMove(move))
         {
-            UpdateBoard(move);
-            SwitchPlayer();
+            Console.WriteLine("Invalid move. Try again (1-9):");
         }
-        else
-        {
-            Console.WriteLine("Invalid move.Try again");
-            Console.ReadLine();
-        }
+
+        UpdateBoard(move);
+        SwitchPlayer();
     }
+
+    static void GetAIMove()
+    {
+        Random random = new Random();
+        int move;
+        do
+        {
+            move = random.Next(1, 10); // Random move between 1 and 9
+        } while (!IsValidMove(move));
+
+        Console.WriteLine($"\nAI selects move {move}");
+        UpdateBoard(move);
+        SwitchPlayer();
+    }
+
     static bool IsValidMove(int move)
     {
         if (move < 1 || move > 9)
             return false;
 
-         int row = (move - 1) / 3;
-         int col = (move - 1) % 3;
+        int row = (move - 1) / 3;
+        int col = (move - 1) % 3;
 
         return board[row, col] == '_';
     }
@@ -80,37 +112,44 @@ class Program
         int row = (move - 1) / 3;
         int col = (move - 1) % 3;
 
-        Console.WriteLine($"\nEnter your symbol ('X' or 'O'): ");
-        char symbol = char.Parse(Console.ReadLine());
-
-        board[row, col] = symbol;
+        board[row, col] = currentPlayer;
     }
-      static void SwitchPlayer()
+
+    static void SwitchPlayer()
     {
         currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';
     }
+
     static bool CheckForWin()
     {
-        for (int i = 0; i < 3; i++) //check rows
+        // Check rows and columns
+        for (int i = 0; i < 3; i++)
         {
             if (board[i, 0] == currentPlayer && board[i, 1] == currentPlayer && board[i, 2] == currentPlayer)
                 return true;
-
-            if ((board[0, 0] == currentPlayer && board[1, 1] == currentPlayer && board[2, 2] == currentPlayer) ||
-            (board[0, 2] == currentPlayer && board[1, 1] == currentPlayer && board[2, 0] == currentPlayer))   // Checkcolumns
-
-            {
+            if (board[0, i] == currentPlayer && board[1, i] == currentPlayer && board[2, i] == currentPlayer)
                 return true;
-            }
-            return false;
         }
 
+        // Check diagonals
+        if (board[0, 0] == currentPlayer && board[1, 1] == currentPlayer && board[2, 2] == currentPlayer)
+            return true;
+        if (board[0, 2] == currentPlayer && board[1, 1] == currentPlayer && board[2, 0] == currentPlayer)
+            return true;
 
-
-
-
-        } 
-
+        return false;
     }
 
+    static bool CheckForTie()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if (board[i, j] == '_')
+                    return false;
+            }
+        }
+        return true;
+    }
 }
