@@ -9,8 +9,8 @@
 ## General Info
 A Tic-Tac-Toe simulation game created using C# with a graphical user interface (GUI). The game supports two modes:
 
-- Player vs. Player: Two players take turns making moves on the same computer.
-- Player vs. AI: One player competes against an AI opponent, with the AI making random moves.
+- **Player vs. Player**: Two players take turns making moves on the same computer.
+- **Player vs. AI**: One player competes against an AI opponent, with the AI making random moves.
   
 The goal of the game is to align three of your marks (either X or O) horizontally, vertically, or diagonally to win. If all squares are filled and no player has won, the game ends in a tie.
 
@@ -18,9 +18,25 @@ The goal of the game is to align three of your marks (either X or O) horizontall
 - C#
   
 # Setup
-Objective: The primary goal of Tic-Tac-Toe is to align three of your marks (either X or O) in a horizontal, vertical, or diagonal row on the 3x3 game board. The player who achieves this first wins the game.
+**Objective**: The primary goal of Tic-Tac-Toe is to align three of your marks (either X or O) in a horizontal, vertical, or diagonal row on the 3x3 game board. The player who achieves this first wins the game.
 
-<br>Game Board<br/>: The game board consists of a 3x3 grid of cells. Each cell can be empty or occupied by a mark (X or O).
+**Game Board**: The game board consists of a 3x3 grid of cells. Each cell can be empty or occupied by a mark (X or O).
+
+# Gameplay
+- **Turn Order**: Players take turns placing their mark in an empty cell. The first player is designated as "X," and the second player is designated as "O."
+
+- **Mark Placement**: A player must select an empty cell to place their mark. If a cell is already occupied, it cannot be overwritten.
+
+- **Winning Condition**: The game ends when one player aligns three of their marks in a row, column, or diagonal.
+
+- **Draw Condition**: If all cells are filled and no player has aligned three marks, the game ends in a draw.
+
+- **Invalid Moves**: Moves made to occupied cells or outside the range of the board are considered invalid. Players must choose a valid, empty cell.
+
+# Modes
+1.** Player vs. Player**
+- **Description**: In this mode, two players take turns on the same computer. Player 1 uses "X" and Player 2 uses "O."
+- **Gameplay**:
 
 ## Code & Snippets
 
