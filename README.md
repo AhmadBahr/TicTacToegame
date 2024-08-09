@@ -34,9 +34,21 @@ The goal of the game is to align three of your marks (either X or O) horizontall
 - **Invalid Moves**: Moves made to occupied cells or outside the range of the board are considered invalid. Players must choose a valid, empty cell.
 
 # Modes
-1.** Player vs. Player**
+1.**Player vs. Player**
 - **Description**: In this mode, two players take turns on the same computer. Player 1 uses "X" and Player 2 uses "O."
 - **Gameplay**:
+ - Players alternate turns, making one move per turn.
+ - Each player manually selects their move by choosing an empty cell.
+ - The game continues until one player wins or the game ends in a draw.
+- **Interaction**: Both players must be present to play the game, as it requires turn-based input from each player.
+ 2. **Player vs. AI**
+    - **Description**: In this mode, one player (Player 1) competes against an AI opponent. Player 1 uses "X," and the AI uses "O."
+- **Gameplay**:
+  - Player 1 takes their turn first by manually selecting an empty cell.
+  - The AI then makes a move by selecting a random empty cell.
+  - The game continues in this alternating fashion until either Player 1 or the AI wins, or the 
+    game ends in a draw.
+- **AI Behavior**: The AI uses a simple random move algorithm, meaning it selects an empty cell without employing advanced strategies.
 
 ## Code & Snippets
 
