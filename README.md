@@ -22,29 +22,29 @@ Objective: The primary goal of Tic-Tac-Toe is to align three of your marks (eith
 Game Board: The game board consists of a 3x3 grid of cells. Each cell can be empty or occupied by a mark (X or O).
 
 ## Gameplay:
-. Turn Order: Players take turns placing their mark in an empty cell. The first player is designated as "X," and the second player is designated as "O."
+- Turn Order: Players take turns placing their mark in an empty cell. The first player is designated as "X," and the second player is designated as "O."
 
-2. Mark Placement: A player must select an empty cell to place their mark. If a cell is already occupied, it cannot be overwritten.
+- Mark Placement: A player must select an empty cell to place their mark. If a cell is already occupied, it cannot be overwritten.
 
-3. Winning Condition: The game ends when one player aligns three of their marks in a row, column, or diagonal.
+- Winning Condition: The game ends when one player aligns three of their marks in a row, column, or diagonal.
 
- 4. Draw Condition: If all cells are filled and no player has aligned three marks, the game ends in a draw.
+ - Draw Condition: If all cells are filled and no player has aligned three marks, the game ends in a draw.
 
-5. Invalid Moves: Moves made to occupied cells or outside the range of the board are considered invalid. Players must choose a valid, empty cell.
+- Invalid Moves: Moves made to occupied cells or outside the range of the board are considered invalid. Players must choose a valid, empty cell.
 
 ## Modes
 1. Player vs. Player
+- Description: In this mode, two players take turns on the same computer. Player 1 uses "X" and Player 2 uses "O."
 
-2. Description: In this mode, two players take turns on the same computer. Player 1 uses "X" and Player 2 uses "O."
+- Gameplay:
 
-Gameplay:
+- Players alternate turns, making one move per turn.
+- Each player manually selects their move by choosing an empty cell.
+- The game continues until one player wins or the game ends in a draw.
+- Interaction: Both players must be present to play the game, as it requires turn-based input 
+    from each player.
 
-Players alternate turns, making one move per turn.
-Each player manually selects their move by choosing an empty cell.
-The game continues until one player wins or the game ends in a draw.
-Interaction: Both players must be present to play the game, as it requires turn-based input from each player.
-
-Player vs. AI
+2. Player vs. AI
 
 Description: In this mode, one player (Player 1) competes against an AI opponent. Player 1 uses "X," and the AI uses "O."
 
